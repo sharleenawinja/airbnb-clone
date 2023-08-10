@@ -7,6 +7,7 @@ import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
 import ToasterProvider from "./providers/ToasterProvider";
+import SearchModal from "@/app/components/modals/SearchModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import RentModal from "./components/modals/RentModal";
 
@@ -31,6 +32,7 @@ export default async function RootLayout({
           <ToasterProvider />
           <LoginModal />
           <RegisterModal />
+          <SearchModal />
           <RentModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
